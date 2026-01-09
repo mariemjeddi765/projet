@@ -66,6 +66,19 @@ public function getByCategory($category_id, $exclude_id = null) {
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 
+    /**
+     * Recherche simple par nom et description
+     * @param string $keyword
+     * @return array
+     */
+    public function search($keyword) {
+        $kw = "%" . $keyword . "%";
+        $stmt = $this->conn->prepare("SELECT p.*, c.name as category_name FROM products p LEFT JOIN categories c ON p.category_id = c.id WHERE p.name LIKE :kw OR p.description LIKE :kw");
+        $stmt->bindValue(':kw', $kw, PDO::PARAM_STR);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
 
 
 }

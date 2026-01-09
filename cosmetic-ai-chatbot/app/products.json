@@ -1,0 +1,283 @@
+[
+  {
+    "id": 1,
+    "name": "Crème hydratante Aloe Vera",
+    "price": 25,
+    "skin_type": "sèche",
+    "description": "Hydrate intensément et apaise la peau"
+  },
+  {
+    "id": 2,
+    "name": "Sérum Vitamine C",
+    "price": 40,
+    "skin_type": "tous",
+    "description": "Illumine le teint et réduit les taches"
+  },
+  {
+    "id": 3,
+    "name": "Gel nettoyant visage",
+    "price": 20,
+    "skin_type": "mixte",
+    "description": "Nettoie en profondeur et élimine l'excès de sébum"
+  },
+  {
+    "id": 4,
+    "name": "Crème solaire SPF 50",
+    "price": 30,
+    "skin_type": "tous",
+    "description": "Protège la peau des rayons UV"
+  },
+  {
+    "id": 5,
+    "name": "Masque purifiant à l'argile",
+    "price": 15,
+    "skin_type": "grasse",
+    "description": "Réduit les imperfections et absorbe l'excès de sébum"
+  },
+  {
+    "id": 6,
+    "name": "Crème anti-âge Q10",
+    "price": 50,
+    "skin_type": "mature",
+    "description": "Réduit les rides et raffermit la peau"
+  },
+  {
+    "id": 7,
+    "name": "Huile d'argan bio",
+    "price": 35,
+    "skin_type": "sèche",
+    "description": "Nourrit et revitalise la peau"
+  },
+  {
+    "id": 8,
+    "name": "Tonique apaisant à la rose",
+    "price": 18,
+    "skin_type": "sensible",
+    "description": "Apaise et rafraîchit la peau"
+  },
+  {
+    "id": 9,
+    "name": "Mousse nettoyante douce",
+    "price": 22,
+    "skin_type": "sensible",
+    "description": "Nettoyage doux sans agresser la peau sensible"
+  },
+  {
+    "id": 10,
+    "name": "Lotion exfoliante AHA",
+    "price": 28,
+    "skin_type": "grasse",
+    "description": "Élimine les impuretés et unifie le teint"
+  },
+  {
+    "id": 11,
+    "name": "Crème de nuit régénérante",
+    "price": 45,
+    "skin_type": "sèche",
+    "description": "Répare et nourrit intensément la peau pendant la nuit"
+  },
+  {
+    "id": 12,
+    "name": "Contour des yeux anti-cernes",
+    "price": 32,
+    "skin_type": "tous",
+    "description": "Réduit les cernes et les rides autour des yeux"
+  },
+  {
+    "id": 13,
+    "name": "Soin acné BHA",
+    "price": 24,
+    "skin_type": "grasse",
+    "description": "Combat l'acné et réduit les pores dilatés"
+  },
+  {
+    "id": 14,
+    "name": "Brume rafraîchissante hydratante",
+    "price": 16,
+    "skin_type": "tous",
+    "description": "Rafraîchit et hydrate la peau à tout moment"
+  },
+  {
+    "id": 15,
+    "name": "Masque hydratant au collagène",
+    "price": 20,
+    "skin_type": "sèche",
+    "description": "Booste l'hydratation et redonne de l'élasticité"
+  },
+  {
+    "id": 16,
+    "name": "Gommage sucre bio",
+    "price": 19,
+    "skin_type": "mixte",
+    "description": "Exfolie doucement sans agresser la peau"
+  },
+  {
+    "id": 17,
+    "name": "Sérum peptides raffermissant",
+    "price": 55,
+    "skin_type": "mature",
+    "description": "Raffermit et lisse la peau mature"
+  },
+  {
+    "id": 18,
+    "name": "Baume à lèvres nourrissant SPF",
+    "price": 12,
+    "skin_type": "tous",
+    "description": "Nourrit et protège les lèvres"
+  },
+  {
+    "id": 19,
+    "name": "Eau micellaire nettoyante",
+    "price": 15,
+    "skin_type": "tous",
+    "description": "Nettoie et démaquille sans assécher la peau"
+  },
+  {
+    "id": 20,
+    "name": "Crème apaisante cuivre zinc",
+    "price": 26,
+    "skin_type": "sensible",
+    "description": "Apaise les irritations et réduit les rougeurs"
+  },
+  {
+    "id": 21,
+    "name": "Gel matifiant thé vert",
+    "price": 23,
+    "skin_type": "grasse",
+    "description": "Régule le sébum et matifie sans dessécher"
+  },
+  {
+    "id": 22,
+    "name": "Sérum niacinamide 10%",
+    "price": 34,
+    "skin_type": "grasse",
+    "description": "Affine les pores et équilibre la production de sébum"
+  },
+  {
+    "id": 23,
+    "name": "Crème riche céramides",
+    "price": 38,
+    "skin_type": "sèche",
+    "description": "Répare la barrière cutanée et nourrit intensément"
+  },
+  {
+    "id": 24,
+    "name": "Baume réparateur panthénol",
+    "price": 27,
+    "skin_type": "sensible",
+    "description": "Apaise, répare et protège les peaux fragilisées"
+  },
+  {
+    "id": 25,
+    "name": "Crème gel hydratante légère",
+    "price": 29,
+    "skin_type": "mixte",
+    "description": "Hydrate sans film gras, fini frais"
+  },
+  {
+    "id": 26,
+    "name": "Sérum rétinol doux",
+    "price": 48,
+    "skin_type": "mature",
+    "description": "Lisse les rides et améliore le renouvellement cellulaire"
+  },
+  {
+    "id": 27,
+    "name": "Crème contour yeux caféine",
+    "price": 30,
+    "skin_type": "tous",
+    "description": "Décongestionne et illumine le contour de l'œil"
+  },
+  {
+    "id": 28,
+    "name": "Fluide solaire mat SPF 50",
+    "price": 33,
+    "skin_type": "grasse",
+    "description": "Haute protection UV au fini sec et non comédogène"
+  },
+  {
+    "id": 29,
+    "name": "Masque nuit hydra-repulpant",
+    "price": 36,
+    "skin_type": "sèche",
+    "description": "Repulpe et restaure l'hydratation pendant la nuit"
+  },
+  {
+    "id": 30,
+    "name": "Tonique PHA douceur",
+    "price": 24,
+    "skin_type": "sensible",
+    "description": "Exfolie en douceur et lisse le grain de peau"
+  },
+  {
+    "id": 31,
+    "name": "Gel nettoyant acide salicylique",
+    "price": 21,
+    "skin_type": "grasse",
+    "description": "Purifie, désincruste et limite les brillances"
+  },
+  {
+    "id": 32,
+    "name": "Sérum acide hyaluronique 2%",
+    "price": 31,
+    "skin_type": "tous",
+    "description": "Repulpe et hydrate immédiatement"
+  },
+  {
+    "id": 33,
+    "name": "Crème barrier light",
+    "price": 28,
+    "skin_type": "mixte",
+    "description": "Renforce la barrière sans effet gras"
+  },
+  {
+    "id": 34,
+    "name": "Huile démaquillante douce",
+    "price": 26,
+    "skin_type": "tous",
+    "description": "Dissout maquillage et SPF sans irriter"
+  },
+  {
+    "id": 35,
+    "name": "Crème apaisante centella",
+    "price": 29,
+    "skin_type": "sensible",
+    "description": "Calme les rougeurs et renforce la peau"
+  },
+  {
+    "id": 36,
+    "name": "Masque charbon anti-imperfections",
+    "price": 22,
+    "skin_type": "grasse",
+    "description": "Déloge les impuretés et affine les pores"
+  },
+  {
+    "id": 37,
+    "name": "Crème éclat vitamine C",
+    "price": 39,
+    "skin_type": "tous",
+    "description": "Uniformise le teint et ravive l'éclat"
+  },
+  {
+    "id": 38,
+    "name": "Sérum peptides yeux",
+    "price": 33,
+    "skin_type": "tous",
+    "description": "Lisse les ridules et décongestionne le contour"
+  },
+  {
+    "id": 39,
+    "name": "Crème nourrissante karité",
+    "price": 27,
+    "skin_type": "sèche",
+    "description": "Nutrition intense et confort longue durée"
+  },
+  {
+    "id": 40,
+    "name": "Fluide solaire invisible SPF 50",
+    "price": 35,
+    "skin_type": "tous",
+    "description": "Protection haute, fini non gras et sans traces"
+  }
+]
+

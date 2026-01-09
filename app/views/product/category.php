@@ -6,14 +6,14 @@
     <?php if (!empty($products)): ?>
         <?php foreach ($products as $product): ?>
             <div class="col-md-3 mb-4">
-                <div class="card h-100">
+                <div class="card product-card h-100">
                     <img src="assets/images/<?php echo $product['image'] ?? 'default.png'; ?>" class="card-img-top" alt="<?php echo $product['name']; ?>">
                     <div class="card-body d-flex flex-column">
-                        <h5 class="card-title"><?php echo $product['name']; ?></h5>
-                        <p class="card-text"><?php echo substr($product['description'], 0, 50) . '...'; ?></p>
+                        <h5 class="card-title product-title"><?php echo $product['name']; ?></h5>
+                        <p class="card-text product-subtitle"><?php echo substr($product['description'], 0, 60) . '...'; ?></p>
                         <p class="card-text fw-bold"><?php echo number_format($product['price'], 2, ',', ' '); ?> DT</p>
                         <div class="mt-auto">
-                            <a href="index.php?page=product&action=show&id=<?php echo $product['id']; ?>" class="btn btn-success w-100 mb-2">Voir</a>
+                            <a href="index.php?page=product&action=show&id=<?php echo $product['id']; ?>" class="btn btn-outline-primary w-100 mb-2">Voir</a>
                             <form action="index.php?page=cart&action=add" method="POST">
                                 <input type="hidden" name="product_id" value="<?php echo $product['id']; ?>">
                                 <button type="submit" class="btn btn-primary w-100">Ajouter au panier</button>

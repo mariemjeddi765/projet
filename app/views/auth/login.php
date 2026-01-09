@@ -2,7 +2,8 @@
 
 <div class="row justify-content-center">
     <div class="col-md-4">
-        <h2 class="mb-4 text-center">Espace Pro - Connexion</h2>
+        <div class="site-panel">
+            <h2 class="mb-4 text-center">Espace Pro - Connexion</h2>
 
         <?php if(!empty($error)): ?>
             <div class="alert alert-danger">
@@ -23,6 +24,7 @@
 
             <button type="submit" class="btn btn-primary w-100">Se connecter</button>
         </form>
+        </div>
     </div>
 </div>
 

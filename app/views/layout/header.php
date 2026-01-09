@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CastleCo</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"><link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Custom overrides (keep after Bootstrap) -->
+    <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-glass">
         <div class="container">
             <a class="navbar-brand" href="index.php?page=home">CastleCo</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -22,6 +25,12 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.php?page=home">Accueil</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php?page=home&action=products">Tous les produits</a>
+                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.php?page=chatbot">Assistant</a>
+                        </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
                             Catégories

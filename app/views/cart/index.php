@@ -1,11 +1,12 @@
 <?php require_once "../app/views/layout/header.php"; ?>
 
-<h2 class="mb-4">Mon Panier</h2>
+<div class="site-panel">
+    <h2 class="mb-4">Mon Panier</h2>
 
-<?php if (!empty($cartItems)): ?>
+    <?php if (!empty($cartItems)): ?>
     <form action="index.php?page=cart&action=update" method="POST">
         <table class="table table-bordered">
-            <thead class="table-dark">
+            <thead class="table-light">
                 <tr>
                     <th>Produit</th>
                     <th>Prix Unitaire</th>
@@ -86,8 +87,9 @@
         <button type="submit" class="btn btn-success">Valider la commande</button>
     </form>
 
-<?php else: ?>
-    <p>Votre panier est vide. <a href="index.php?page=home">Voir les produits</a></p>
-<?php endif; ?>
+    <?php else: ?>
+        <p>Votre panier est vide. <a href="index.php?page=home">Voir les produits</a></p>
+    <?php endif; ?>
+</div>
 
 <?php require_once "../app/views/layout/footer.php"; ?>

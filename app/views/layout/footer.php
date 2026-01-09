@@ -1,8 +1,13 @@
     </div> <!-- /container -->
 
     <!-- Footer -->
-    <footer class="bg-dark text-white mt-5 p-4 text-center">
-        &copy; <?php echo date("Y"); ?> CastleCo. Tous droits réservés.
+    <footer class="site-footer mt-5">
+        <div class="container text-center">
+            <div class="mb-2">
+                <span class="accent-badge">CastleCo</span>
+            </div>
+            <div class="small text-muted">&copy; <?php echo date("Y"); ?> CastleCo. Tous droits réservés.</div>
+        </div>
     </footer>
 
     <!-- Bootstrap JS Bundle (avec Popper) -->

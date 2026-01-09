@@ -1,14 +1,16 @@
 <?php require_once "../app/views/layout/header.php"; ?>
 
-<div class="row">
+<div class="row site-panel align-items-center">
     <!-- Détail produit -->
-    <div class="col-md-6">
-        <img src="assets/images/<?php echo $product['image'] ?? 'default.png'; ?>" class="img-fluid" alt="<?php echo $product['name']; ?>">
+    <div class="col-md-6 mb-3">
+        <div class="card product-card">
+            <img src="assets/images/<?php echo $product['image'] ?? 'default.png'; ?>" class="card-img-top" alt="<?php echo $product['name']; ?>">
+        </div>
     </div>
 
     <div class="col-md-6">
-        <h2><?php echo $product['name']; ?></h2>
-        <p class="fw-bold"><?php echo number_format($product['price'], 2, ',', ' '); ?> DT</p>
+        <h2 class="product-title"><?php echo $product['name']; ?></h2>
+        <p class="fw-bold product-subtitle"><?php echo number_format($product['price'], 2, ',', ' '); ?> DT</p>
         <p><?php echo $product['description']; ?></p>
 
         <!-- Formulaire Ajouter au panier -->
@@ -19,7 +21,7 @@
                 <input type="number" name="quantity" id="quantity" class="form-control" value="1" min="1" max="<?php echo $product['quantity']; ?>">
             </div>
             <button type="submit" class="btn btn-primary me-2">Ajouter au panier</button>
-            <a href="index.php?page=cart&action=checkout&product_id=<?php echo $product['id']; ?>" class="btn btn-success">Acheter</a>
+            <a href="index.php?page=cart&action=checkout&product_id=<?php echo $product['id']; ?>" class="btn btn-outline-primary">Acheter</a>
         </form>
 
         <p>Stock disponible : <?php echo $product['quantity']; ?></p>

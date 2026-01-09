@@ -42,6 +42,16 @@ switch ($page) {
     }
     break;
 
+    case 'chatbot':
+        require_once "../app/controllers/ChatbotController.php";
+        $controller = new ChatbotController();
+        if (isset($_GET['action']) && method_exists($controller, $_GET['action'])) {
+            $controller->{$_GET['action']}();
+        } else {
+            $controller->index();
+        }
+        break;
+
 
     case 'cart':
         require_once "../app/controllers/CartController.php";

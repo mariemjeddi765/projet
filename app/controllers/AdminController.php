@@ -99,4 +99,53 @@ class AdminController {
         $clients = $clientModel->getAll();
         require_once __DIR__ . '/../views/admin/clients/index.php';
     }
+
+    public function stats() {
+        $saleModel = new Sale();
+        $sales = $saleModel->getAll();
+
+        // Prepare last 6 months buckets
+        $months = [];
+        $now = new DateTime();
+        for ($i = 5; $i >= 0; $i--) {
+            $m = (clone $now)->modify("-{$i} months");
+            $key = $m->format('Y-m');
+            $months[$key] = [
+                'label' => $m->format('M Y'),
+                'total' => 0.0,
+                'count' => 0
+            ];
+        }
+
+        $paymentMethods = [];
+        foreach ($sales as $s) {
+            $d = new DateTime($s['created_at']);
+            $k = $d->format('Y-m');
+            if (isset($months[$k])) {
+                $months[$k]['total'] += floatval($s['total_price']);
+                $months[$k]['count'] += 1;
+            }
+
+            $pm = $s['payment_method'] ?? 'unknown';
+            if (!isset($paymentMethods[$pm])) $paymentMethods[$pm] = 0;
+            $paymentMethods[$pm] += 1;
+        }
+
+        $labels = [];
+        $totals = [];
+        $counts = [];
+        foreach ($months as $m) {
+            $labels[] = $m['label'];
+            $totals[] = round($m['total'], 2);
+            $counts[] = $m['count'];
+        }
+
+        $payment_labels = array_keys($paymentMethods);
+        $payment_values = array_values($paymentMethods);
+
+        $totalSales = array_sum($totals);
+        $totalOrders = array_sum($counts);
+
+        require_once __DIR__ . '/../views/admin/stats.php';
+    }
 }
